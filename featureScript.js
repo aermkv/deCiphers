@@ -101,7 +101,7 @@ function calculateFeatures(tokenData) {
     if (screwPercent < .1) {
       scrC = screwCols.gold;
     }
-    if (screwPercent > .15 && screwPercent < .4) {
+    if (screwPercent > .1 && screwPercent < .4) {
       scrC = screwCols.black;
     }
     return scrC;
