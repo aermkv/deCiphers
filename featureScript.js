@@ -1,4 +1,4 @@
-//tokenData.hash = "0xb05208b700962c155d7870a075b3170ff68b56af0495bb2c1f0ba49f68fbf796"
+
 function calculateFeatures(tokenData) {
   const hashPairs = [];
   for (let j = 0; j < 32; j++) {
