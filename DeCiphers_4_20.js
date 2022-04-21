@@ -2437,7 +2437,7 @@ function chooseScrew() {
   if (screwPercent < .1) {
     scrC = screwCols.gold;
   }
-  if (screwPercent > .1 && screwPercent < .3) {
+  if (screwPercent > .1 && screwPercent < .4) {
     scrC = screwCols.black;
   }
   return scrC;
