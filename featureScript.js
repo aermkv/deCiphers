@@ -54,41 +54,42 @@ function calculateFeatures(tokenData) {
 
   function choosePalette() {
     const palPercent = map(decPairs[0],0,255,0,1);
-      if (palPercent < .09) {
+      if (palPercent < .1) {
         chosenPal = "Rays"
-      }else if (palPercent < .1){
-        chosenPal = "Nautical"
       }else if (palPercent < .2){
-        chosenPal = "Vibrance"
+        chosenPal = "Nautical"
       }else if (palPercent < .29){
-        chosenPal = "Range"
+        chosenPal = "Vibrance"
       }else if (palPercent < .38){
+        chosenPal = "Range"
+      }else if (palPercent < .47){
         chosenPal = "Darken"
-      }else if (palPercent < .46){
+      }else if (palPercent < .55){
         chosenPal = "Linear Burn"
-      }else if (palPercent < .54){
+      }else if (palPercent < .62){
         chosenPal = "Highlight"
-      }else if (palPercent < .61){
+      }else if (palPercent < .69){
         chosenPal = "Hard Mix"
-      }else if (palPercent < .67){
+      }else if (palPercent < .75){
         chosenPal = "Radiance"
-      }else if (palPercent < .73){
+      }else if (palPercent < .81){
         chosenPal = "Screen"
-      }else if (palPercent < .78){
+      }else if (palPercent < .86){
         chosenPal = "Threshold"
-      }else if (palPercent < .83){
+      }else if (palPercent < .91){
         chosenPal = "Soft Light"
-      }else if (palPercent < .88){
+      }else if (palPercent < .94){
         chosenPal = "Chroma"
-      }else if (palPercent < .93){
+      }else if (palPercent < .96){
         chosenPal = "Color Burn"
-      }else if (palPercent < .97){
+      }else if (palPercent < .98){
         chosenPal = "Pinlight"
       }else{
         chosenPal = "Render"
       }
       return chosenPal
   }
+  
   const screwCols = {
     silver: "Silver",
     gold: "Gold",
