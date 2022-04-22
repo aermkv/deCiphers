@@ -2403,35 +2403,35 @@ const screwCols = {
 
 function choosePalette() {
   const palPercent = map(decPairs[0],0,255,0,1);
-    if (palPercent < .09) {
+    if (palPercent < .1) {
       chosenPal = palettes.rays
-    }else if (palPercent < .1){
-      chosenPal = palettes.nautical
     }else if (palPercent < .2){
-      chosenPal = palettes.vibrance
+      chosenPal = palettes.nautical
     }else if (palPercent < .29){
-      chosenPal = palettes.range
+      chosenPal = palettes.vibrance
     }else if (palPercent < .38){
+      chosenPal = palettes.range
+    }else if (palPercent < .47){
       chosenPal = palettes.darken
-    }else if (palPercent < .46){
+    }else if (palPercent < .55){
       chosenPal = palettes.lin_burn
-    }else if (palPercent < .54){
+    }else if (palPercent < .62){
       chosenPal = palettes.highlight
-    }else if (palPercent < .61){
+    }else if (palPercent < .69){
       chosenPal = palettes.hard_mix
-    }else if (palPercent < .67){
+    }else if (palPercent < .75){
       chosenPal = palettes.radiance
-    }else if (palPercent < .73){
+    }else if (palPercent < .81){
       chosenPal = palettes.screen
-    }else if (palPercent < .78){
+    }else if (palPercent < .86){
       chosenPal = palettes.threshold
-    }else if (palPercent < .83){
+    }else if (palPercent < .91){
       chosenPal = palettes.soft_light
-    }else if (palPercent < .88){
+    }else if (palPercent < .94){
       chosenPal = palettes.chroma
-    }else if (palPercent < .93){
+    }else if (palPercent < .96){
       chosenPal = palettes.col_burn
-    }else if (palPercent < .97){
+    }else if (palPercent < .98){
       chosenPal = palettes.pinlight
     }else{
       chosenPal = palettes.render
